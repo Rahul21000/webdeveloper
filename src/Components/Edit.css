@@ -1,0 +1,11 @@
+.edit {
+  color: var(--Dark---All-Content, rgba(31, 31, 31, 0.8));
+  font-family: "Outfit-Medium", Helvetica;
+  font-size: 6.459px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 64.587px;
+  background: #f0effa;
+  padding: 5px 15px;
+}

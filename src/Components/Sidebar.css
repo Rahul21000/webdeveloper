@@ -1,0 +1,79 @@
+.sidebar-layout {
+  width: 25vw;
+  height: 100vh;
+  background: #fff;
+  box-shadow: 0px 8.88888931274414px 53.33333206176758px 0px
+    rgba(226, 236, 249, 0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.dash-btn {
+  width: 150px;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 8.889px;
+  border: 0.889px solid var(--input-box-stroke-thin, rgba(0, 0, 0, 0.15));
+  box-shadow: 0px 1.7777777910232544px 1.7777777910232544px 0px
+    rgba(0, 0, 0, 0.1);
+
+  color: rgba(34, 34, 34, 0.9);
+  font-family: "Outfit-Medium", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.myprofile-btn a {
+  /* margin-top: 80px; */
+  padding: 12px 35px;
+  text-decoration: none;
+  text-align: center;
+  color: #1a1558;
+
+  font-family: "Palatino Linotype-Regular", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 8.889px;
+  border: 0.889px solid #413b89;
+  box-shadow: 0px 1.7777777910232544px 1.7777777910232544px 0px
+    rgba(0, 0, 0, 0.1);
+}
+.myconnection-btn a {
+  padding: 12px 35px;
+  text-decoration: none;
+  color: #1a1558;
+  font-family: "Linotype-Regular", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+}
+.logout {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 20px;
+  color: rgba(34, 34, 34, 0.9);
+  font-family: "Outfit-Medium", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar-layout {
+  }
+}

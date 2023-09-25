@@ -1,0 +1,55 @@
+.login {
+  width: 600px;
+  height: auto;
+  padding: 10px;
+  margin:0 auto;
+  margin-top: 60px;
+}
+form {border: 3px solid #f1f1f1;}
+
+.usr, .psw {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+span.ps {
+  float: left;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.ps {
+     display: block;
+     float: none;
+  }
+}
