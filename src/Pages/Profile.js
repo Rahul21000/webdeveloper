@@ -2,39 +2,23 @@ import "./Profile.css";
 import Edit from "../Components/Edit";
 import MainLayout from "../Layout/MainLayout";
 import { useState } from "react";
-const Profile = () => {
-  // const college = "IIT HYDERABAD";
-  // const from = "2010";
-  // const to = "2014";
-  // const branch = "Btech";
-  const college = "jiwaji university";
-  const from = "2021";
-  const to = "2023";
-  const branch = "MCA";
+// import { MyContext } from "../MyContext";
 
-  const desc =
-    "Lorem ipsum dolor sit amet consectetur. Erat auctor a aliquam vel congue luctus. Leo diam cras neque mauris acarcu elit ipsum dolor sit amet consectetur";
-  // const program = "Python";
-  // const company = "Coding Ninjas";
-  // const companyName = "Oruphones";
+const Profile = () => {
   const program = "java";
   const company = "IntersElite";
   const companyName = "Atiuttam tech";
   const duration = "3 month";
   const type = "Full-time";
-  // const from_e = "2014";
-  // const to_e = "2021";
   const from_e = "jul";
   const to_e = "sep";
-  const position = "--Full Stack Developer[MERN]";
+  const position = "--Full Stack Developer";
   const [open, setOpen] = useState(false);
   const [openEmail, setOpenEmail] = useState(false);
   const [openPhone, setOpenPhone] = useState(false);
-  const [name, setName] = useState("rahul");
+  const [name, setName] = useState("Rahul Rathore");
   const [email, setEmail] = useState("rahulrathore21000@gmail.com");
   const [phone, setPhone] = useState("+91 8370057351");
-  // const [email, setEmail] = useState("rahul@oruphones.com");
-  // const [phone, setPhone] = useState("+91 49652845732");
   const handleSubmit = (event) => {
     event.preventDefault();
   };
@@ -46,8 +30,12 @@ const Profile = () => {
       <div className="Profile-layout">
         <div className="section-1">
           <div className="profile-upload">
-            <div>
-              <img src="/Images/Ellipse 255.svg" alt="profile" />
+            <div className="img_div">
+              <img
+                className="profile_image"
+                src="/Images/rahul_image.jpg"
+                alt="profile"
+              />
             </div>
             <div>
               <button className="upload">Upload Photo</button>
@@ -135,9 +123,13 @@ const Profile = () => {
               <Edit></Edit>
             </div>
             <p>
-             i am mern stack developer and i have great passion for web development and created many web application and if you give me chance,i will do my my best
+              Hi,I am mern stack developer and i have great passion for web
+              development and created many web application and if you give me
+              chance,i will do my my best
             </p>
           </div>
+
+          {/* skill */}
           <div className="skill">
             <div className="skill-1">
               <h6>Skills</h6>
@@ -146,25 +138,36 @@ const Profile = () => {
             <ul className="scroll">
               {/* <li>Next Js</li>
               <li>Typescript</li> */}
-              <li>mern stack</li>
-              <li>javascript</li>
-              <li>html</li>
-              <li>css</li>
-              <li>php</li>
-              <li>java</li>
+              <li>React.js</li>
+              <li>Redux</li>
+              <li>Express.js</li>
+              <li>Node.js</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Core java</li>
               <li>mysql</li>
-              <li>mongodb</li>
+              <li>Mongodb</li>
+              <li>Mysql</li>
               <li>boostrap</li>
-              <li>jquery</li>
-              
             </ul>
           </div>
         </div>
         <div className="section-2">
           <div className="profession">
             <img src="/Images/Stars.svg" alt="double-star" />
-            <h6>Professional Details</h6>
-            <p>This are the professional details shown to users in the app.</p>
+            <h5>More skill</h5>
+            <p>
+              <b>tool</b> Git & Github
+            </p>
+            <p>
+              <b>Server</b> Apache server
+            </p>
+            <p>
+              {" "}
+              <pre>
+                <b>IDE</b> Vscode . Ecllipes
+              </pre>
+            </p>
           </div>
           <div className="certificate">
             <div className="certificate-1">
@@ -177,6 +180,8 @@ const Profile = () => {
               <p>{company}</p>
             </div>
           </div>
+
+          {/* Experience */}
           <div className="experience">
             <div className="experience-1">
               <h6>Experience</h6>
@@ -195,6 +200,8 @@ const Profile = () => {
                   {" "}
                   {companyName} {position}
                 </pre>
+                     technology-React js 
+                     position-Associate developer
               </div>
             </div>
           </div>
@@ -205,14 +212,21 @@ const Profile = () => {
               <Edit></Edit>
             </div>
             <div className="clg-group">
-              <div className="college">{college} </div>
+              <div className="college">jiwaji university</div>
               <div className="clg">
-                <div className="duration">
-                  ({from}-{to})
-                </div>
-                <div className="branch">{branch}</div>
+                <div className="duration">(2021-2023)</div>
+                <div className="branch">MCA</div>
+                <div className="duration">Marks</div>
+                <div className="branch">7.0 cgpa</div>
               </div>
-              <div className="description">{desc}</div>
+              <div className="college">Govt. S.L.P college </div>
+              <div className="clg">
+                <div className="duration">(2017-2020)</div>
+                <div className="branch">Bsc</div>
+                <div className="duration">Marks</div>
+                <div className="branch">53%</div>
+              </div>
+              <div className="description"></div>
             </div>
           </div>
         </div>

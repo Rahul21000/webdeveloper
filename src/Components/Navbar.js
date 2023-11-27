@@ -1,19 +1,9 @@
+import { useState } from "react";
 import "./Navbar.css";
 
-// const Navprofile=()=>{
-//     return(
-//         <div className='navbarprofile-layout'>
-//             <div className='wrapper'>
-
-//             </div>
-
-//         </div>
-//     )
-// }
-
 const Navbar = () => {
-  // const name = "Vishnu Swaroop";
-  const name = "rahul";
+  const [name,setName]=useState("rahul rathore")
+  const [open,setOpen]=useState(false);
   return (
     <div className="navbar-layout">
       <div className="nav-div">
@@ -24,7 +14,20 @@ const Navbar = () => {
           <p>welcome back,</p>
           <h3>{name}</h3>
           </div>
-          <img src="/Images/Arrow-Down.svg" alt="" />
+          <div className="nav_profile">
+
+          <img className={open?"before_click":"after_click"} src="/Images/Arrow-Down.svg"alt="" onClick={()=>setOpen(!open)} />
+          {open ?
+      <div className="popup_div">
+        <ul>
+          <li>profile</li>
+          <li>setting</li>
+          <li>about</li>
+          <li>logout</li>
+        </ul>
+      </div>
+      :""}
+      </div>
         </div>
       </div>
     </div>
